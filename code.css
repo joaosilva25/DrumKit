@@ -1,0 +1,43 @@
+* {
+    box-sizing:border-box;
+    padding:0px;
+    margin:0px;
+    color:white;
+}
+
+body {
+    background-color: rgb(87, 87, 87);
+}
+.row {
+    gap:13px;
+    height: 300px;
+    justify-content: center;
+    width: 350px;
+
+}
+
+input {
+    width:150px;
+}
+
+.geral {
+    margin-top:20vh;
+}
+
+.col {
+    border:2px solid rgb(255, 255, 255);
+    font-size:2em;
+}
+
+.composition{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    position:relative;bottom:40px
+}
+
+button {
+    color:black;
+}
