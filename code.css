@@ -13,11 +13,17 @@ body {
     height: 300px;
     justify-content: center;
     width: 350px;
+}
 
+.row button {
+    width:5rem;
+    height: 100%;
+    position:relative;right:10px;
 }
 
 input {
     width:150px;
+    color:black;
 }
 
 .geral {
@@ -40,4 +46,8 @@ h1 {
 
 button {
     color:black;
+}
+
+.active{
+    background-color: aqua;
 }
