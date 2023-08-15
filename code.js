@@ -30,7 +30,7 @@ function playSound(sound) {
 
 function composition() {
 
-    let input =document.querySelector('input').value;
+    let input =document.querySelector('input').value.toLowerCase();
     let arraySong=input.split('');
     let interval=0
 
