@@ -11,8 +11,9 @@ document.body.addEventListener('keyup', (event)=> {
 function playSound(sound) {
     let audioElement=document.querySelector(`#s_${sound}`);
     let key=document.querySelector(`button[data-key="${sound}"]`)
-
+    
     if (audioElement) {
+        audioElement.currentTime=0;
         audioElement.play();
     }
 
@@ -21,6 +22,26 @@ function playSound(sound) {
         
         setTimeout(() => {
         key.classList.remove('active');
-        },300);
+        },400);
     }
+}
+
+
+
+function composition() {
+
+    let input =document.querySelector('input').value;
+    let arraySong=input.split('');
+    let interval=0
+
+
+
+        for (let songItems of arraySong) {
+        setTimeout( () => {
+            playSound(`key${songItems}`)
+    
+        },interval);
+
+        interval += 400;
+        }
 }
